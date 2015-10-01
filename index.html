@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html>
+		<head>
+		<meta charset="utf-8">
+			<title>Assignment 1</title>
+			<link rel="stylesheet" type="text/css" href=" css/main.css" title="standard">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+			<script src="main.js"></script>  
+		</head>
+
+			<body>
+				<div class= "row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+					<img src="https://assets.conestogac.on.ca/assets/images/conestoga-logo.jpg" alt="logo">
+					</div>
+					<div class="col-md-3"></div>
+				</div>
+				<div class="row rowAnchor"></div>
+				<div class="row"></div>
+			
+
+
+				<div class='row'>
+						<div class="col-md-2"></div>
+						<div class="col-md-8">
+
+							
+							<form class="form-horizontal" onsubmit="checkForm(this);">
+								<div class="col-md-6">
+
+								<div class="form-group">
+							    <label for="name" class="col-sm-2 control-label">Name</label>
+							    <div class="col-sm-10">
+							      <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+							    </div>
+							  </div>
+
+							  <div class="form-group">
+							    <label for="street" class="col-sm-2 control-label"  >Address</label>
+							    <div class="col-sm-10">
+							      <input type="text" class="form-control" id="street" name="address" placeholder="Street">
+
+
+								<div class="row formMagin">
+							      <div class="col-sm-4">
+							      	<input type="text" class="form-control" id="city" name="city" placeholder="City">	 	
+							      			      
+							      </div>
+							      <div class="col-sm-4">
+							      	<select class="form-control" id="province">
+									  <option>Ontario</option>
+									  <option>Quebec</option>
+									  <option>Manitoba </option>
+									  <option>Saskatchewan</option>									  
+									</select>
+							      <!-- <input type="text" class="form-control" id="province" placeholder="Province"> -->
+							      </div>
+							      <div class="col-sm-4">
+							      	<input type="text" class="form-control" id="Postal" name="Postal" placeholder="Postal">
+							      	</div>
+							      </div>
+							    </div>
+							  </div>
+
+							  <div class="form-group">
+							    <label for="telephone" class="col-sm-2 control-label" >Telephone</label>
+							    <div class="col-sm-10">
+							      <input type="text" class="form-control" id="telephone" name="telephone"placeholder="Telephone" >
+							    </div>
+							  </div>
+
+							  <div class="form-group">
+							    <label for="email" class="col-sm-2 control-label">Email</label>
+							    <div class="col-sm-10">
+							      <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+							    </div>
+							  </div>
+							</div>
+
+
+
+
+							<div class="col-md-6">
+
+								<div class = "row">
+									<label class="col-sm-2 control-label">Pizza Size</label>
+									<div class="col-sm-10">
+							  	<label class="radio-inline">
+								  <input type="radio" name="sizeOption" id="sizesmall" value="small"> SMALL
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="sizeOption" id="sizemedium" value="medium"> MEDIUM
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="sizeOption" id="sizelarge" value="large"> LARGE
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="sizeOption" id="sizexl" value="XLarge"> EXTRA LARGE
+								</label>
+								</div>						
+
+								</div>
+
+
+
+								<div class = "row formMagin">
+									<label  class="col-sm-2 control-label">CRUS TTYPES</label>
+								<div class="col-sm-10">
+							  	<label class="radio-inline">
+								  <input type="radio" name="typeOption" id="typehand" value="HAND"> HAND TOSSED
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="typeOption" id="typePan" value="PAN"> PAN
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="typeOption" id="typeStuffed" value="STUFFED"> STUFFED
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="typeOption" id="typeThin" value="THIN"> THIN
+								</label>
+								</div>				
+								</div>
+
+								<div class = "row formMagin">
+									<label  class="col-sm-2 control-label"></label>
+								<div class="col-sm-10">You could hold Ctrl to select multiple toppings					
+								</div>						
+								</div>
+
+
+								<div class = "row">
+									<label  class="col-sm-2 control-label">Topping</label>
+								<div class="col-sm-10">
+
+								<select multiple class="form-control" id= "topping">
+								  <option>Almonds</option>
+								  <option>Basil</option>
+								  <option>Salmon</option>
+								  <option>Whitebait</option>
+								  <option>Turkey</option>
+								  <option>Mozzarella</option>
+								  <option>Muenster</option>
+								  <option>Salmon</option>
+								  <option>Rosemary</option>
+								  <option>Red beans</option>
+								  <option>Sweet corn</option>
+								  <option>Lobster</option>
+								  <option>Spinach</option>
+								  <option>Whitebait</option>
+								  <option>Mushrooms</option>
+								  <option>Pine</option>
+								  <option>Colby</option>
+								  <option>Eggplant</option>
+								  <option>Gorgonzola</option>
+								  <option>Parmesan</option>
+
+								</select>
+								</div>						
+								</div>		
+							</div>
+
+
+
+						
+
+
+ 								<div class="row rowAnchor"></div>
+ 								<div class= "row">
+ 									<div class = "col-sm-5"></div>
+							  	<div class="form-group col-sm-2">							    
+							      <input type="submit" class="btn btn-primary" id="submit" value="Place My Order">
+
+							      <!-- does here has to be input? -->
+							   
+							  </div>
+							  		<div class = "col-sm-5"></div>
+
+							  </div>
+
+							</form>
+
+							<div id="errors" class="alert hidden row">
+								<div class = "col-sm-4"></div>
+		 					<span id="error" class="alert alert-success col-sm-4">
+		 					<span id="header" class ="desc"><h3>Your order detail:</h3></span>
+
+		 					<span id="size" class ="desc"></span>
+
+		 					<span id="type" class ="desc"></span>
+		 					<span id="top" class ="desc"></span>
+		 					<span id="total" class ="desc"></span>	 				
+
+		 					</span>
+
+
+		 					<div class = "col-sm-4"></div>
+					</div>
+				<div class="col-md-2"></div>
+				</div>
+
+
+				
+					
+		 		</div>
+		 	
+			</body>
+
+</html>
